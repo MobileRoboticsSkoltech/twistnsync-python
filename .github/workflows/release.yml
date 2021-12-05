@@ -36,12 +36,12 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install poetry livereload
+          pip install poetry mkdocs
 
       - name: pre-publish documentation
         run: |
           poetry install -E doc
-          poetry run mkdocs build --no-livereload
+          poetry run mkdocs build
 
       - name: publish documentation
         uses: peaceiris/actions-gh-pages@v3
