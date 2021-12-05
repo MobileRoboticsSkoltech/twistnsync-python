@@ -20,7 +20,6 @@ classifiers=[
 ]
 packages = [
     { include = "twistnsync" },
-    { include = "tests", format = "sdist" },
 ]
 
 [tool.poetry.dependencies]
