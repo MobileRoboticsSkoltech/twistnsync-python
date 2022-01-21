@@ -5,7 +5,7 @@ Or you need to synchronize Azure Kinect DK [depth frames](https://arxiv.org/abs/
 
 Twist-n-Sync is a time synchronization algorithm that can solve the time sync issues by employing gyroscope chips widely available in millions of comsumer gadgets.
 
-Another benefical usage of the package is synchronization of diverse motion capture (mocap) systems (OptTrack, Vicon) that provide ground truth data for robot navigation and state estimation algorithms (Wheeled, Visual, Visual-Inertial Odometry and SLAM).
+Another benefical usage of the package is synchronization of diverse motion capture (mocap) systems (OptiTrack, Vicon) that provide ground truth data for robot navigation and state estimation algorithms (Wheeled, Visual, Visual-Inertial Odometry and SLAM).
 
 WIP: The python (OR NOTEBOOK) examples in [`examples`](https://github.com/MobileRoboticsSkoltech/twistnsync-python/examples) folder provide comprehensive mini-tutorials how to use the code:
 - two systems sync by gyroscope data;
