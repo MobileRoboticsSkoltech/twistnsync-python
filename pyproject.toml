@@ -2,7 +2,7 @@
 [tool.poetry]
 name = "twistnsync"
 version = "0.2.0"
-homepage = "https://github.com/MobileRoboticsSkoltech/twistnsync"
+homepage = "https://github.com/MobileRoboticsSkoltech/twistnsync-python"
 description = "Twist-n-Sync is time synchronization algorithm that employs IMU gyroscope data."
 authors = ["Marsel Faizullin <marsel.faizullin@skoltech.ru>"]
 readme = "README.md"
