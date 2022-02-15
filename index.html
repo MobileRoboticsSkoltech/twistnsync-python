@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#twist-n-sync" class="md-skip">
+        <a href="#twist-n-sync-time-synchronization-algorithm-that-employs-imu-gyroscope-data" class="md-skip">
           Skip to content
         </a>
       
@@ -288,16 +288,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#twist-n-sync" class="md-nav__link">
-    Twist-n-Sync
+  <a href="#twist-n-sync-time-synchronization-algorithm-that-employs-imu-gyroscope-data" class="md-nav__link">
+    Twist-n-Sync. Time synchronization algorithm that employs IMU gyroscope data
   </a>
   
-    <nav class="md-nav" aria-label="Twist-n-Sync">
+    <nav class="md-nav" aria-label="Twist-n-Sync. Time synchronization algorithm that employs IMU gyroscope data">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    Features
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-examples" class="md-nav__link">
+    Usage examples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
   </a>
   
 </li>
@@ -390,16 +404,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#twist-n-sync" class="md-nav__link">
-    Twist-n-Sync
+  <a href="#twist-n-sync-time-synchronization-algorithm-that-employs-imu-gyroscope-data" class="md-nav__link">
+    Twist-n-Sync. Time synchronization algorithm that employs IMU gyroscope data
   </a>
   
-    <nav class="md-nav" aria-label="Twist-n-Sync">
+    <nav class="md-nav" aria-label="Twist-n-Sync. Time synchronization algorithm that employs IMU gyroscope data">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    Features
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-examples" class="md-nav__link">
+    Usage examples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
   </a>
   
 </li>
@@ -436,36 +464,64 @@
                   <h1>home</h1>
                 
                 <!-- BEGIN INCLUDE ../README.md   -->
-<h2 id="twist-n-sync">Twist-n-Sync<a class="headerlink" href="#twist-n-sync" title="Permanent link">&para;</a></h2>
-<p align="center">
-<a href="https://pypi.python.org/pypi/twistnsync">
-    <img src="https://img.shields.io/pypi/v/twistnsync.svg"
-        alt = "Release Status">
-</a>
-
-<a href="https://github.com/MobileRoboticsSkoltech/twistnsync/actions">
-    <img src="https://github.com/MobileRoboticsSkoltech/twistnsync/actions/workflows/main.yml/badge.svg?branch=master" alt="CI Status">
-</a>
-
-<a href="https://twistnsync.readthedocs.io/en/latest/?badge=latest">
-    <img src="https://readthedocs.org/projects/twistnsync/badge/?version=latest" alt="Documentation Status">
-</a>
-
-<a href="https://pyup.io/repos/github/MobileRoboticsSkoltech/twistnsync/">
-<img src="https://pyup.io/repos/github/MobileRoboticsSkoltech/twistnsync/shield.svg" alt="Updates">
-</a>
-
-</p>
-
-<p>Twist-n-Sync is time synchronization algorithm that employs IMU gyroscope data</p>
-<ul>
-<li>Free software: Apache-2.0</li>
-<li>Documentation: <a href="https://twistnsync.readthedocs.io">https://twistnsync.readthedocs.io</a></li>
-</ul>
-<h3 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h3>
-<ul>
-<li>TODO</li>
-</ul>
+<h2 id="twist-n-sync-time-synchronization-algorithm-that-employs-imu-gyroscope-data">Twist-n-Sync. Time synchronization algorithm that employs IMU gyroscope data<a class="headerlink" href="#twist-n-sync-time-synchronization-algorithm-that-employs-imu-gyroscope-data" title="Permanent link">&para;</a></h2>
+<p>Imagine that you want to synchronize <a href="https://www.mdpi.com/1424-8220/21/1/68">two smartphones</a><sup>1</sup> for stereoscopic (or multiscopic) photo or video shutting with <em>microseconds accuracy and precision</em>.
+Or you need to synchronize Azure Kinect DK <a href="https://arxiv.org/abs/2111.03552">depth frames</a><sup>2</sup> with smartphone frames.</p>
+<p>Twist-n-Sync is a time synchronization algorithm that can solve the time sync issues by employing gyroscope chips widely available in millions of comsumer gadgets.</p>
+<p>Another benefical usage of the package is synchronization of diverse motion capture (mocap) systems (OptiTrack, Vicon) that provide ground truth data for robot navigation and state estimation algorithms (Wheeled, Visual, Visual-Inertial Odometry and SLAM).</p>
+<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
+<p><code>pip install twistnsync</code></p>
+<h3 id="usage-examples">Usage examples<a class="headerlink" href="#usage-examples" title="Permanent link">&para;</a></h3>
+<p>WIP: The python notebook examples in <a href="https://github.com/MobileRoboticsSkoltech/twistnsync-python/examples"><code>examples</code></a> folder provide comprehensive mini-tutorials how to use the code:
+- <a href="https://github.com/MobileRoboticsSkoltech/twistnsync-python/blob/master/examples/Smartphone_and_MCU-board_data_sync.ipynb">two systems sync by gyroscope data</a>;
+- TODO mocap data (position orientation) and robot data sync;
+- TODO clock drift evaluation of two independent systems;</p>
+<h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
+<p>In case of usage of the materials, please, refer to the source and/or publications:</p>
+<p><sup>1</sup>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>@article{faizullin2021twist,
+  title={Twist-n-Sync: Software Clock Synchronization with Microseconds Accuracy Using MEMS-Gyroscopes},
+  author={Faizullin, Marsel and Kornilova, Anastasiia and Akhmetyanov, Azat and Ferrer, Gonzalo},
+  journal={Sensors},
+  volume={21},
+  number={1},
+  pages={68},
+  year={2021},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+</code></pre></div>
+</td></tr></table></p>
+<p><sup>2</sup>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>@ARTICLE{9709778,
+  author={Faizullin, Marsel and Kornilova, Anastasiia and Akhmetyanov, Azat and Pakulev, Konstantin and Sadkov, Andrey and Ferrer, Gonzalo},
+  journal={IEEE Sensors Journal}, 
+  title={SmartDepthSync: Open Source Synchronized Video Recording System of Smartphone RGB and Depth Camera Range Image Frames with Sub-millisecond Precision}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/JSEN.2022.3150973}
+}
+</code></pre></div>
+</td></tr></table></p>
 <h3 id="credits">Credits<a class="headerlink" href="#credits" title="Permanent link">&para;</a></h3>
 <p>This package was created with <a href="https://github.com/audreyr/cookiecutter">Cookiecutter</a> and the <a href="https://github.com/zillionare/cookiecutter-pypackage">zillionare/cookiecutter-pypackage</a> project template.</p>
 <!-- END INCLUDE -->
