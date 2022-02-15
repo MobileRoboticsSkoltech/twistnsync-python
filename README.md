@@ -7,10 +7,10 @@ Twist-n-Sync is a time synchronization algorithm that can solve the time sync is
 
 Another benefical usage of the package is synchronization of diverse motion capture (mocap) systems (OptiTrack, Vicon) that provide ground truth data for robot navigation and state estimation algorithms (Wheeled, Visual, Visual-Inertial Odometry and SLAM).
 
-WIP: The python (OR NOTEBOOK) examples in [`examples`](https://github.com/MobileRoboticsSkoltech/twistnsync-python/examples) folder provide comprehensive mini-tutorials how to use the code:
-- two systems sync by gyroscope data;
-- mocap data (position orientation) and robot data sync;
-- clock drift evaluation of two independent systems;
+WIP: The python notebook examples in [`examples`](https://github.com/MobileRoboticsSkoltech/twistnsync-python/examples) folder provide comprehensive mini-tutorials how to use the code:
+- [two systems sync by gyroscope data](https://github.com/MobileRoboticsSkoltech/twistnsync-python/blob/master/examples/Smartphone_and_MCU-board_data_sync.ipynb);
+- TODO mocap data (position orientation) and robot data sync;
+- TODO clock drift evaluation of two independent systems;
 
 In case of usage of the materials, please, refer to the source and/or publications:
 
